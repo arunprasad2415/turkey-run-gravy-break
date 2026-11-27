@@ -1,0 +1,13 @@
+{
+  "name": "turkey-run-gravy-break",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Gravy Break, a top-down turkey escape game for make.fun's turkey-run-game-01 bounty",
+  "license": "MIT",
+  "scripts": {
+    "start": "node serve.ts",
+    "test": "node tools/simulate.mjs",
+    "stage": "node main.ts"
+  }
+}

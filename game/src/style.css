@@ -1,0 +1,35 @@
+/* Layout only: the canvas fills the window and keeps its 16:9 shape, letterboxed on the page's own
+   autumn colour. The game draws everything else itself. */
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background: #24160e;
+  overflow: hidden;
+}
+
+#stage {
+  position: fixed;
+  inset: 0;
+  display: grid;
+  place-items: center;
+}
+
+#screen {
+  width: min(100vw, 177.78vh);
+  height: min(56.25vw, 100vh);
+  image-rendering: auto;
+  box-shadow: 0 12px 60px rgba(0, 0, 0, 0.55);
+  cursor: crosshair;
+  touch-action: none;
+}
+
+#fallback {
+  position: absolute;
+  color: #f6e3c5;
+  font: 16px/1.5 system-ui, sans-serif;
+  max-width: 40ch;
+  text-align: center;
+}
